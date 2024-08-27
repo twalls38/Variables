@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tip Calculator </title>
+</head>
+<body>
+    <p class = "displayBill"></p>
+</body>
+    <script>
+        let guestBill = prompt("Enter your bill");
+        guestBill = parseInt(guestBill);
+        let taxedBill = (guestBill * 0.07) + guestBill;
+        let tip = taxedBill * 0.15;
+        let finalBill = taxedBill + tip;
+        document.querySelector('.displayBill').innertext = "Your bill is $" + finalBill
+    </script>
+
+</html>
